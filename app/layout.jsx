@@ -11,12 +11,12 @@ import StarsCanvas from '@/components/StarBackground';
 const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Abhirup | Web Developer | App Developer | C++ Programmer',
+  title: 'Vedaant Mitra || developer || AI',
   description: 'Portfolio Website',
   image: "/hero/developer.png",
-  keywords: ['abhirup', 'kumar', 'bhowmick', 'abhirupkumar', 'portfolio', 'web development', 'app development', 'software geek', 'c++ programming'],
+  keywords: ['vedaant', 'mitra', 'developer', 'AI', 'portfolio', 'web development', 'app development', 'software', 'AI development'],
   openGraph: {
-    title: 'Abhirup | Web Developer | App Developer | C++ Programmer',
+    title: 'Vedaant Mitra || developer || AI',
     description: 'Portfolio Website',
     images: [
       {
@@ -33,7 +33,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.className}  bg-[#030014]`}>
+      <body className={`${outfit.className} bg-background`}>
         <StarsCanvas />
         <Header />
         {children}

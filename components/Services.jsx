@@ -44,19 +44,20 @@ const Services = () => {
         </h2>
 
         {/* grid items */}
-        <div className="grid lg:grid-cols-3 justify-center gap-y-12 lg:gap-y-24 lg:gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8 items-stretch justify-center">
           {servicesData.map((item, index) => {
+            const isAI = item.title.toLowerCase().includes('ai');
             return (
               <Card
-                className="w-full max-w-[424px] h-[350px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                className={`w-full max-w-[424px] h-[350px] flex flex-col pt-16 pb-10 justify-center items-center relative transition-shadow duration-300 ${isAI ? 'border-cyan-400/25 shadow-[0_18px_50px_rgba(34,211,238,0.12)]' : 'border-slate-200/30'}`}
                 key={index}
               >
-                <CardHeader className="text-primary -mt-32">
+                <CardHeader className={`text-primary -mt-32 ${isAI ? 'bg-cyan-500/10 border border-cyan-400/30 rounded-full shadow-sm' : ''}`}>
                   <motion.div
                     variants={scaleVariants}
                     whileInView={scaleVariants.whileInView}
                   >
-                    <img src={item.icon} alt={`icon-${index}`} className='h-[200px] w-[200px] rounded-[20px] object-cover object-center' />
+                    <img src={item.icon} alt={`icon-${index}`} className={`h-[200px] w-[200px] rounded-[20px] object-cover object-center ${isAI ? 'ring-2 ring-cyan-400/50' : ''}`} />
                   </motion.div>
                 </CardHeader>
 
