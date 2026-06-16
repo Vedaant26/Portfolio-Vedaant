@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Calendar,
   Briefcase,
+  Award,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -62,6 +63,28 @@ const qualificationData = [
         company: 'FuturixAI & Quantum Works',
         role: 'AI Developer',
         years: 'Oct 2025 - Mar 2026',
+      },
+    ],
+  },
+  {
+    title: 'achievements',
+    data: [
+      {
+        title: 'Winner of Clash of Codes',
+        description: 'Won the coding competition in March 2025.',
+        years: 'Mar 2025',
+      },
+      {
+        title: 'Grand Finalist of Smart India Hackathon',
+        description:
+          'Top 5 among all teams across India in the national-level hackathon in December 2024.',
+        years: 'Dec 2024',
+      },
+      {
+        title: 'Winner of Vigyaan Hackathon',
+        description:
+          'A national-level hackathon held in Delhi in April 2024.',
+        years: 'Apr 2024',
       },
     ],
   },
@@ -142,7 +165,7 @@ const About = () => {
             className="flex-1"
           >
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid lg:grid-cols-3 lg:max-w-[520px] lg:border">
+              <TabsList className="w-full grid lg:grid-cols-4 lg:max-w-[680px] lg:border">
                 <TabsTrigger className="w-[162px] lg:w-auto" value="personal">
                   Personal Info
                 </TabsTrigger>
@@ -154,6 +177,9 @@ const About = () => {
                 </TabsTrigger>
                 <TabsTrigger className="w-[162px] lg:w-auto" value="experiences">
                   Experiences
+                </TabsTrigger>
+                <TabsTrigger className="w-[162px] lg:w-auto" value="achievements">
+                  Achievements
                 </TabsTrigger>
               </TabsList>
 
@@ -269,6 +295,48 @@ const About = () => {
                                   </div>
                                   <div className="text-lg leading-none text-muted-foreground mb-4">
                                     {role}
+                                  </div>
+                                  <div className="text-base font-medium">
+                                    {years}
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
+
+                {/* achievements */}
+                <TabsContent value="achievements">
+                  <div className="text-center lg:text-left">
+                    <h3 className="h3 mb-8">Achievements</h3>
+
+                    <div className="flex flex-col gap-y-6">
+                      <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                        <Award size={28} />
+                        <h4 className="capitalize font-medium">
+                          {getData(qualificationData, 'achievements').title}
+                        </h4>
+                      </div>
+
+                      <div className="flex flex-col gap-y-8">
+                        {getData(qualificationData, 'achievements').data.map(
+                          (item, index) => {
+                            const { title, description, years } = item;
+                            return (
+                              <div className="flex gap-x-8 group" key={index}>
+                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                  <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                </div>
+                                <div>
+                                  <div className="font-semibold text-xl leading-none mb-2">
+                                    {title}
+                                  </div>
+                                  <div className="text-lg leading-none text-muted-foreground mb-4">
+                                    {description}
                                   </div>
                                   <div className="text-base font-medium">
                                     {years}

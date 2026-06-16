@@ -25,12 +25,12 @@ export async function POST(request) {
                     Messages: [
                         {
                             From: {
-                                Email: "abhirupkumar2003@gmail.com",
-                                Name: "Portfolio Message • abhirupkumar2003@gmail.com",
+                                Email: "vedaant04mitra@gmail.com",
+                                Name: "Portfolio Message • vedaant04mitra@gmail.com",
                             },
                             To: [
                                 {
-                                    Email: "abhirupkumar2003@gmail.com",
+                                    Email: "vedaant04mitra@gmail.com",
                                 },
                             ],
                             Subject: `New Message from ${reqBody.name ?? "Someone"}`,

@@ -30,19 +30,19 @@ const Contact = () => {
             {/* mail */}
             <div className="flex items-center gap-x-8">
               <MailIcon size={18} className="text-primary" />
-              <div>abhirupkumar2003@gmail.com</div>
+              <div>vedaant04mitra@gmail.com</div>
             </div>
 
             {/* address */}
             <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
-              <div>Ganganagar, Kol-700132, WB, India</div>
+              <div>New Delhi, India</div>
             </div>
 
             {/* phone */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div>+91 700 388 9430</div>
+              <div>+91 72177 99354</div>
             </div>
           </div>
           <Form />
