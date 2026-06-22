@@ -1,11 +1,19 @@
 import { NextResponse } from "next/server";
 
-const mailjet = require("node-mailjet").apiConnect(
-    process.env.NEXT_PUBLIC_MAILJET_API_KEY,
-    process.env.NEXT_PUBLIC_MAILJET_SECRET_KEY
-);
-
 export async function POST(request) {
+    // Check for required environment variables
+    if (!process.env.MAILJET_API_KEY || !process.env.MAILJET_SECRET_KEY) {
+        return NextResponse.json(
+            { success: false, error: "Email service not configured. Please set MAILJET_API_KEY and MAILJET_SECRET_KEY environment variables." },
+            { status: 500 }
+        );
+    }
+
+    const mailjet = require("node-mailjet").apiConnect(
+        process.env.MAILJET_API_KEY,
+        process.env.MAILJET_SECRET_KEY
+    );
+
     const reqBody = await request.json();
     try {
         const emailMessage = `
