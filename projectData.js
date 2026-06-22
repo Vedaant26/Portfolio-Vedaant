@@ -4,9 +4,9 @@ export const projectData = [
         category: 'next js',
         name: 'FaceAuth',
         description:
-            'FaceAuth is an AI-powered facial recognition application that provides secure and seamless authentication for various platforms.',
+            'FaceAuth is an AI-powered facial recognition application which works in both online and offline mode that provides secure and seamless authentication for various platforms.',
         link: 'https://faceauth.vercel.app',
-        github: 'https://github.com/abhirupkumar/faceauth',
+        github: 'https://github.com/Vedaant26/FaceAuth',
     },
     {
         image: '/work/static.png',
@@ -77,27 +77,11 @@ export const projectData = [
         github: 'https://github.com/abhirupkumar/Netflix-Clone',
     },
     {
-        image: '/work/8.png',
-        category: 'react js',
-        name: 'Crypto Tracker',
-        description: 'Crypto Tracker tracks all the information regarding top 100 crypto currencies. It also gives live update about every cryptocurrency.',
-        link: 'https://crypto-tracker-akb.netlify.app',
-        github: 'https://github.com/abhirupkumar/Crypto-Tracker',
-    },
-    {
         image: '/work/7.png',
         category: 'next js',
         name: 'Linkedin Clone',
         description: 'This application is made using Next.js, Tailwind Css, Material UI, MongoDb, Firebase and some React Libraries. Users can post their articles as well as images.',
         link: 'https://linkedin-clone-mauve.vercel.app/',
         github: 'https://github.com/abhirupkumar/linkedin-clone',
-    },
-    {
-        image: '/work/9.jpg',
-        category: 'react native',
-        name: 'Deliveroo Clone',
-        description: 'This is a Food Ordering App where users can order any food item as per their desire from any restaurant they like. They can even see the details of the restaurant they are ordering food from.',
-        link: 'https://expo.dev/@abhirup/deliveroo-clone-apk',
-        github: 'https://github.com/abhirupkumar/deliveroo-clone',
     },
 ];
