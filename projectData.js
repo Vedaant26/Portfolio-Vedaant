@@ -15,7 +15,7 @@ export const projectData = [
         description:
             'Static is a no-code website builder that allows users to create and publish SEO-optimized static sites effortlessly',
         link: 'https://static-akb.vercel.app',
-        github: 'https://github.com/abhirupkumar/static',
+        github: 'https://github.com/Vedaant26/FaceAuth',
     },
 
 ];
