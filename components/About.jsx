@@ -60,14 +60,14 @@ const qualificationData = [
     title: 'experience',
     data: [
       {
-        company: 'ACM USS chapter',
-        role: 'Front end developer',
-        years: 'Jul 2024 - Jun 2025',
-      },
-      {
         company: 'FuturixAI',
         role: 'Full Stack Developer',
         years: 'Oct 2025 - Mar 2026',
+      },
+      {
+        company: 'ACM USS chapter',
+        role: 'Front end developer',
+        years: 'Jul 2024 - Jun 2025',
       },
     ],
   },
