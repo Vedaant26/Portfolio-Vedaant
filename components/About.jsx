@@ -60,8 +60,13 @@ const qualificationData = [
     title: 'experience',
     data: [
       {
-        company: 'FuturixAI & Quantum Works',
-        role: 'AI Developer',
+        company: 'ACM USS chapter',
+        role: 'Front end developer',
+        years: 'Jul 2024 - Jun 2025',
+      },
+      {
+        company: 'FuturixAI',
+        role: 'Full Stack Developer',
         years: 'Oct 2025 - Mar 2026',
       },
     ],
@@ -192,7 +197,7 @@ const About = () => {
                       Tech enthusiast
                     </h3>
                     <p className="subtitle max-w-xl mx-auto lg:mx-0">
-                      I am a final-year student at the B. P. Poddar Institute of Management and Technology, pursuing CSE. I am a tech enthusiast with knowledge of various programming languages and frameworks.
+                      I am a pre-final-year student at University school of Automation and Robotics, pursuing CSE. I am a tech enthusiast with knowledge of various programming languages and frameworks.
                     </p>
 
                     {/* icons */}
